@@ -1,13 +1,15 @@
+
 import React from 'react'
-import ReactDOM  from 'react-dom/client'
+import ReactDOM from "react-dom/client";
+import { CounterApp } from './CounterApp';
 
-function App() {
-    //document.createElement....
-    return <h1>Hola mundo!!!</h1>;
-}
+import './styles.css'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+
+
+
+ReactDOM.createRoot( document.getElementById('root')).render(
     <React.StrictMode>
-        <App/>
+        <CounterApp value = {20}/>
     </React.StrictMode>
 )
